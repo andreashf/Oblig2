@@ -1,0 +1,132 @@
+@import url('normalize.css');
+
+/* Box-sizing fix */
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-bok-sizing: border-box;
+   box-sizing: border-box;
+}
+header, main, footer, nav, article, aside, div * {
+  display: block;
+  overflow: hidden;
+}
+/* Bakgrunnsfarge */
+body {
+  background-color: rgb(219, 219, 219);
+}
+/* Velkommen overskrift */
+header {
+  text-align: center;
+  font-size: 22pt;
+  background-color: rgb(84, 175, 133);
+  border-style: solid;
+  margin: 2px
+}
+
+/* sentrerer forsidebildet */
+#bakgrunn {
+  text-align: center;
+  z-index: -1;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 200px;
+  border-style: solid;
+  background-color: rgba(2, 2, 2, 0.6);
+}
+a:link {
+  color: rgb(103, 211, 150);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(210, 210, 210);
+}
+/* Setter hovedlinkene etter hverandre og fjerner liste-dottene */
+  /*nav ul {
+  list-style: none;
+} */
+/* Fjerner underlinkene */
+/* nav ul li ul{
+  display: none;
+} */
+/* Viser underlinkene når hovedlunker hovres over */
+/*nav ul li:hover ul {
+  display: inline-block;
+  position: absolute;
+} */
+#flex_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+article {
+  width: calc(100% / 2);
+}
+footer {
+  border-style: solid;
+  border-color: black;
+  background-color: rgba(2, 2, 2, 0.6);
+  color: rgb(210, 210, 210);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#artikkel_nettside {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px auto auto 100px ;
+  grid-template-areas:  "header header"
+                        "article article"
+                        "article article"
+                        ;
+}
+header#portefølje {
+  grid-area: header;
+  text-align: center;
+  background: #ccc;
+}
+article {
+  grid-area: article;
+}
+*/

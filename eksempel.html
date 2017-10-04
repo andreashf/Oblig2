@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Grid example</title>
+		<link href="normalize.css" rel="stylesheet" />
+		<style>
+			#master-grid {
+				max-width: 1200px;
+				margin: 0 auto;
+
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 100px auto auto 100px;
+				grid-template-areas: 	"header header header"
+										"introbilde introbilde introtext"
+										"maincontent maincontent maincontent"
+										"functions footer footer";
+			}
+
+			header {
+
+				background: #ccc;
+			}
+			img#introbilde {
+				grid-area: introbilde;
+				max-width: 100%;
+			}
+			div.about {
+				grid-area: introtext;
+				background: red;
+				color: white;
+			}
+			main {
+				grid-area: maincontent;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="master-grid">
+			<header>
+				<p>Dette er headeren</p>
+			</header>
+			<img src="http://via.placeholder.com/950x250" id="introbilde" />
+			<div class="about">
+				<h3>About us</h3>
+				<p>Lucas ipsum dolor sit amet ponda sith kessel secura hutt hutt skywalker kessel jabba dooku. Palpatine boba antilles cade kessel. Vader kamino palpatine qui-gon r2-d2 darth anakin darth solo. Yoda mandalorians mon coruscant jar darth solo hutt skywalker. Sidious dantooine amidala darth mothma. Boba moff dagobah hutt jango moff padmé gonk. Jinn skywalker darth lobot wampa calamari sidious anakin. Skywalker jango sidious leia organa yoda owen padmé antilles. Moff yoda coruscant moff wedge jinn. Darth gamorrean coruscant ponda watto.</p>
+
+<p>Chewbacca skywalker ewok amidala leia calamari owen kessel darth. Dagobah darth hutt grievous yoda kashyyyk. Fett leia aayla hutt sebulba darth yoda calamari. Organa skywalker mon hutt mon kenobi greedo hutt padmé. Windu anakin antilles dooku thrawn dantooine palpatine antilles ewok. Alderaan solo mandalore jabba thrawn mon skywalker. Binks binks tatooine ben yavin c-3p0. Yoda leia antilles han mace ackbar calamari mara lando. Leia ewok maul calamari grievous darth wampa lobot. Kashyyyk maul zabrak mon boba watto.</p>
+
+<p>Dantooine mace ewok moff tusken raider organa jango darth endor. Calrissian kessel boba vader. Mandalore kenobi sith skywalker jinn hutt antilles dagobah darth. Amidala k-3po fett solo wedge naboo solo hoth mothma. Bothan fett coruscant antilles. Alderaan k-3po mothma solo jango darth moff lobot. Chewbacca obi-wan calamari moff wicket zabrak windu. Mon mace dooku hutt. Utapau coruscant darth fisto hutt mothma antilles. Solo mon anakin fett mace lando leia utapau. Darth leia luuke bothan antilles.!</p>
+			</div>
+			<main>
+
+			</main>
+		</div>
+	</body>
+</html>
